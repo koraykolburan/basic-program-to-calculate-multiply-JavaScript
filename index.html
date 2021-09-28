@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic program to calculate multiplication with JavaScript</title>
+    <style type="text/css">
+      body {
+        text-align: center;
+        margin: 100px;
+        background-color: indigo;
+        font-family: Verdana;
+        font-size: xx-large;
+      }
+      #firstNumber {
+        margin: 15px;
+      }
+      #secondNumber {
+        margin: 15px;
+      }
+      #numbers {
+        border: 1px outset rgb(78, 64, 64);
+        border-radius: 10px;
+        height: fit-content;
+        width: fit-content;
+        text-align: center;
+        margin: auto;
+        background-color: lightcoral;
+      }
+      #button1 {
+        height: 50px;
+        width: 100px;
+        border-radius: 50%;
+        font-size: x-large;
+        background-color: indigo;
+        color: white;
+      }
+      #button1:hover {
+        background-color: grey;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="numbers">
+      <form>
+        Nu 1 : <input type="text" id="firstNumber" /><br />
+        Nu 2 : <input type="text" id="secondNumber" /><br />
+        <input
+          type="button"
+          onClick="multiplyBy()"
+          value="Multiply"
+          id="button1"
+        />
+      </form>
+      <p>
+        <b
+          >Equals :
+          <span id="result"></span>
+        </b>
+      </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
